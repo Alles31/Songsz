@@ -1,0 +1,29 @@
+{
+  "profile": {
+    "name": "A Journey Through Our Songs",
+    "subtitle": "THE DIGITAL KEEPSAKE",
+    "profileImage": "https://via.placeholder.com/120/1a1a1a/ffffff?text=Photo",
+    "quote": "Every note we've ever shared is a map leading back to the moments that defined us."
+  },
+  "songs": [
+    {
+      "id": 1,
+      "title": "About You",
+      "artist": "The 1975",
+      "image": "photo/AboutYoupfp.jpg",
+      "musicFile": "music/About You.mp3",
+      "memory": "Alright, hal pertama yang menggambarkan kamu adalah lagu ini. Bagi aku kamu terlalu menyatu dengan lagu ini dan ini juga menjadi alasan aku kenapa aku mau bisa mainin keyboard about you, meskipun keyboard aku kurang proper untuk mainin lagu ini, aku tetap belajar agar kamu bisa mendengarnya langsung"
+    },
+    {
+      "id": 2,
+      "title": "Rhythm of The Rain",
+      "artist": "The Cascades",
+      "image": "photo/RhytmRainpfp.jpg",
+      "musicFile": "music/Rhythm of The Rain.mp3",
+      "memory": "Lagu pertama yang aku kasih ke kamu di sendthesong, ya emm mungkin notes yang disitu keliatan kaya nyerang kamu, nyebut nyebut kamu avoidant, tapi sebenernya aku ngetik itu semua karena aku pengen agar kamu paham apa yang aku rasain saat itu. kalo kamu liat dari lirik lagu ini kamu bakal paham maksud aku kenapa aku ngirimnya pake lagu itu"
+    }
+  ],
+  "unreleasedChapter": {
+    "quote": "Sometimes the silence between our favorite songs says more than the lyrics ever could."
+  }
+}
