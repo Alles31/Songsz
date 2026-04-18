@@ -34,7 +34,7 @@ function displaySongs(songs) {
                     <div class="player-controls">
                         <button class="skip-btn" data-song-id="${song.id}" title="Rewind 10 seconds" onclick="skipBackward(event)">⏮ 10s</button>
                         <button class="play-btn" data-song-id="${song.id}" data-music-file="${song.musicFile}" title="Play" onclick="playMusic(event)">▶</button>
-                        <button class="pause-btn" data-song-id="${song.id}" title="Pause" onclick="pauseMusic(event)" style="display:none;">⏸</button>
+                        <button class="pause-btn" data-song-id="${song.id}" title="Pause" onclick="pauseMusic(event)" style="display:none;">||</button>
                         <button class="skip-btn" data-song-id="${song.id}" title="Forward 10 seconds" onclick="skipForward(event)">10s ⏭</button>
                     </div>
                 </div>
