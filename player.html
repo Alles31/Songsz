@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Mode - A Journey Through Our Songs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="player-mode">
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <h1 class="title">A Journey Through Our Songs</h1>
+            <p class="subtitle">MUSIC PLAYLIST</p>
+            <p class="quote">"Music never stops, and neither do the memories..."</p>
+        </header>
+
+        <!-- Player Section -->
+        <section class="music-player">
+            <div class="player-display">
+                <div class="album-art">
+                    <img id="current-album" src="https://via.placeholder.com/200/1a1a1a/ffffff?text=Now+Playing" alt="Now Playing">
+                </div>
+                <div class="player-info">
+                    <h2 id="current-title" class="current-title">Loading...</h2>
+                    <p id="current-artist" class="current-artist">Loading...</p>
+                    <p id="song-counter" class="song-counter">Song 1 of 1</p>
+                </div>
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="progress-container">
+                <span id="current-time" class="time">0:00</span>
+                <input type="range" id="progress-bar" class="progress-bar" min="0" max="100" value="0">
+                <span id="duration" class="time">0:00</span>
+            </div>
+
+            <!-- Player Controls -->
+            <div class="player-controls-main">
+                <button id="prev-btn" class="control-btn" title="Previous Song">⏮ PREV</button>
+                <button id="play-pause-btn" class="control-btn play-pause" title="Play/Pause">▶ PLAY</button>
+                <button id="next-btn" class="control-btn" title="Next Song">NEXT ⏭</button>
+                <button id="loop-btn" class="control-btn loop-control" title="Loop Mode" data-loop="all">⟲ LOOP</button>
+            </div>
+
+            <!-- Volume Control -->
+            <div class="volume-container">
+                <label for="volume-slider">Volume:</label>
+                <input type="range" id="volume-slider" class="volume-slider" min="0" max="100" value="70">
+            </div>
+
+            <!-- Playlist Queue -->
+            <div class="playlist-section">
+                <h3 class="playlist-title">QUEUE</h3>
+                <div id="playlist-queue" class="queue-list"></div>
+            </div>
+        </section>
+
+        <!-- Mode Switcher -->
+        <section class="mode-switcher">
+            <a href="index.html" class="mode-btn" title="View with Notes">NOTES MODE</a>
+            <a href="player.html" class="mode-btn active" title="Continuous Playback">PLAYER MODE</a>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>CONTINUOUS PLAYLIST - ENJOY THE JOURNEY</p>
+            <div class="footer-links">
+                <a href="#our-story">OUR STORY</a>
+                <a href="#privacy">PRIVACY</a>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Audio Player (Hidden) -->
+    <audio id="audio-player"></audio>
+
+    <script src="player.js"></script>
+</body>
+</html>
