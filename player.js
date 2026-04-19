@@ -8,10 +8,23 @@ async function initializePlayer() {
     try {
         const response = await fetch('data.json');
         const data = await response.json();
-        allSongs = data.songs;
+        let allAvailableSongs = data.songs;
+        
+        // Check if custom playlist exists in localStorage
+        const customPlaylist = localStorage.getItem('customPlaylist');
+        if (customPlaylist) {
+            const playlistIds = JSON.parse(customPlaylist);
+            // Filter songs based on custom playlist
+            allSongs = allAvailableSongs.filter(song => playlistIds.includes(song.id));
+            // Maintain the order from the playlist
+            allSongs.sort((a, b) => playlistIds.indexOf(a.id) - playlistIds.indexOf(b.id));
+        } else {
+            // Use all songs if no custom playlist
+            allSongs = allAvailableSongs;
+        }
         
         if (allSongs.length === 0) {
-            displayError('No songs available');
+            displayError('No songs in playlist. Go to Playlist Manager to add songs.');
             return;
         }
 

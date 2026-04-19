@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playlist Manager - A Journey Through Our Songs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="playlist-manager-mode">
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <h1 class="title">A Journey Through Our Songs</h1>
+            <p class="subtitle">PLAYLIST BUILDER</p>
+            <p class="quote">"Curate your own journey through our favorite moments..."</p>
+        </header>
+
+        <!-- Info Box -->
+        <section class="info-box">
+            <p>✨ Pilih lagu-lagu mana yang ingin diputar di Spotify Mode. Bisa dipilih semua, sebagian, atau hanya satu!</p>
+        </section>
+
+        <!-- Playlist Manager Section -->
+        <section class="playlist-manager">
+            <!-- Quick Actions -->
+            <div class="playlist-actions">
+                <button id="select-all-btn" class="action-btn select-all-btn" title="Select all songs">
+                    ✓ SELECT ALL
+                </button>
+                <button id="clear-all-btn" class="action-btn clear-all-btn" title="Deselect all songs">
+                    ✗ CLEAR ALL
+                </button>
+                <button id="reset-btn" class="action-btn reset-btn" title="Reset to default (all songs)">
+                    ↻ RESET
+                </button>
+            </div>
+
+            <!-- Songs Selection List -->
+            <div class="songs-selection">
+                <h3 class="selection-title">SELECT SONGS FOR YOUR PLAYLIST</h3>
+                
+                <!-- Search Box -->
+                <div class="search-container">
+                    <input 
+                        type="text" 
+                        id="search-input" 
+                        class="search-input" 
+                        placeholder="Search music by title or artist..."
+                        onkeyup="filterSongs()"
+                    >
+                </div>
+
+                <div id="songs-list" class="songs-list"></div>
+            </div>
+
+            <!-- Playlist Preview -->
+            <div class="playlist-preview">
+                <h3 class="preview-title">YOUR PLAYLIST (<span id="selected-count">0</span>/<span id="total-count">0</span>)</h3>
+                <div id="playlist-display" class="playlist-display"></div>
+            </div>
+
+            <!-- Save & Action Buttons -->
+            <div class="manager-actions">
+                <button id="save-playlist-btn" class="save-btn" title="Save playlist and start playing">
+                    SAVE & PLAY
+                </button>
+                <a href="player.html" class="go-player-btn" title="Go to player">
+                    GO TO PLAYER
+                </a>
+            </div>
+        </section>
+
+        <!-- Mode Switcher -->
+        <section class="mode-switcher">
+            <a href="index.html" class="mode-btn" title="View with Notes">NOTES MODE</a>
+            <a href="player.html" class="mode-btn" title="Continuous Playback">SPOTIFY MODE</a>
+            <a href="playlist-manager.html" class="mode-btn active" title="Create Playlist">PLAYLIST</a>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>BUILD YOUR PERFECT PLAYLIST</p>
+            <div class="footer-links">
+                <a href="#our-story">OUR STORY</a>
+                <a href="#privacy">PRIVACY</a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="playlist-manager.js"></script>
+</body>
+</html>
