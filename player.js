@@ -216,7 +216,7 @@ function toggleLoop() {
 
 function updatePlayPauseButton() {
     const playPauseBtn = document.getElementById('play-pause-btn');
-    playPauseBtn.innerHTML = isPlaying ? '⏸ PAUSE' : '▶ PLAY';
+    playPauseBtn.innerHTML = isPlaying ? '❚❚ PAUSE' : '▶ PLAY';
 }
 
 function displayError(message) {
