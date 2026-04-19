@@ -75,7 +75,7 @@ body {
     padding: 20px 20px 20px 30px;
     border-left: 2px solid rgba(255, 255, 255, 0.1);
     display: flex;
-    gap: 15px;
+    gap: 10px;
 }
 
 .song-thumbnail {
@@ -174,7 +174,6 @@ body {
     justify-content: center;
     transition: all 0.3s ease;
     flex-shrink: 0;
-    -webkit-appearance: none;
     -webkit-user-select: none;
     user-select: none;
 }
